@@ -191,7 +191,11 @@ Connect the USB webcam to the laptop.
 Run:
 
 
+Run:
+
+```bash
 python "motion tracker.py"
+```
 
 
 The program detects the person and sends their position to the ESP32.
