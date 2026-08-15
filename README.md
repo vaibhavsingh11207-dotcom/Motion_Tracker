@@ -53,6 +53,34 @@ Serial Communication
 ESP32
 
 
+
+
+## 🧩 CAD Design
+
+The pan-and-tilt mechanism was designed in Tinkercad before being constructed physically.
+
+
+### 🔧 Assembly Instructions
+
+The arrows in the CAD model indicate the following:
+
+**1st Arrow — Pan Servo:**
+The first arrow shows the position of the **pan servo**. The servo should be attached so that its rotating horn can rotate the upper part of the platform, allowing the camera to **pan left and right**.
+
+**2nd Arrow — Tilt Servo:**
+The second arrow represents the position of the **tilt servo**. The servo is connected between the lower and upper parts of the platform so that its movement allows the upper platform to **tilt up and down**.
+
+If the servo is unable to handle the weight of the upper platform or the mechanism becomes unbalanced, the servo horn can be extended by attaching longer sticks to it. This provides additional leverage for the tilt mechanism.
+
+**3rd & 4th Arrows — Required Screws:**
+The third and fourth arrows indicate the locations where **screws are necessary** to secure the mechanical joints of the platform.
+
+> **Note:** The CAD model is intended as a reference for the physical construction. Some dimensions or structural details may need to be adjusted depending on the materials, servo positioning, and weight of the camera being used.
+
+(these info is valid for the image named as "pan and tilt labels.png")
+
+
+
 ### 2. Pan-Tilt Control
 
 The ESP32 receives the detected coordinates and compares them with the center of the camera frame.
