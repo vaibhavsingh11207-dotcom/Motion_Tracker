@@ -141,8 +141,8 @@ cad/
 The physical prototype was built primarily using inexpensive materials, including ice cream sticks, making the project accessible without specialized manufacturing equipment.
 
 
-
 ## 📁 Project Structure
+
 
 
 AI-Motion-Tracking-Robot/
@@ -166,6 +166,7 @@ AI-Motion-Tracking-Robot/
 │
 └── demo/
     └── project_video
+
 
 
 *Filenames may differ depending on the final repository organization.*
