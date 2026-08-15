@@ -138,8 +138,6 @@ The mechanical platform was manually constructed and adapted during assembly to 
 * **Serial communication**
 
 
-## 📁 Project Structure
-
 
 ## 📁 Project Structure
 
@@ -193,7 +191,7 @@ Connect the USB webcam to the laptop.
 Run:
 
 
-motion tracker.py
+python "motion tracker.py"
 
 
 The program detects the person and sends their position to the ESP32.
@@ -204,7 +202,7 @@ The program detects the person and sends their position to the ESP32.
 
 The camera frame is divided into tracking regions.
 
-
+```text
         CAMERA FRAME
 
      ┌─────────────────┐
@@ -216,8 +214,7 @@ The camera frame is divided into tracking regions.
      │       ↓         │
      │                 │
      └─────────────────┘
-
-
+```
 A small center region acts as a **dead zone**, preventing unnecessary servo movement when the subject is already approximately centered.
 
 
