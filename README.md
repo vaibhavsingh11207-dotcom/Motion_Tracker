@@ -88,7 +88,7 @@ Depending on the person's position:
 * Moving left/right → the **pan servo** adjusts.
 * Moving up/down → the **tilt servo** adjusts.
 * When the person is approximately centered → the servos stop adjusting.
-
+  
        USB Webcam
               │
               ▼
