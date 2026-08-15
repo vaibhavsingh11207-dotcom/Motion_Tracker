@@ -89,31 +89,20 @@ Depending on the person's position:
 * Moving up/down → the **tilt servo** adjusts.
 * When the person is approximately centered → the servos stop adjusting.
   
-       USB Webcam
-              │
-              ▼
-       ┌──────────────┐
-       │ Python + YOLO│
-       └──────┬───────┘
-              │
-        Person Center
-           (X, Y)
-              │
-              ▼
-       Serial Communication
-              │
-              ▼
-          ┌───────┐
-          │ ESP32 │
-          └───┬───┘
-              │
-        ┌─────┴─────┐
-        ▼           ▼
-    Pan Servo    Tilt Servo
-        │           │
-        └─────┬─────┘
-              ▼
-       Pan-Tilt Camera
+   A[📷 USB Webcam] --> B[💻 Python + YOLOv8]
+   B --> C[👤 Detect Person]
+   C --> D[📍 Calculate Center X, Y]
+   D --> E[🔌 Serial Communication]
+   E --> F[⚙️ ESP32]
+
+   F --> G[↔️ Pan Servo]
+   F --> H[↕️ Tilt Servo]
+
+   G --> I[Pan Movement]
+   H --> J[Tilt Movement]
+
+   I --> K[🎥 Pan-Tilt Camera]
+   J --> K
 
 
 
