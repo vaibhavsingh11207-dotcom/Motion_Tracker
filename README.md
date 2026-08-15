@@ -74,7 +74,7 @@ The third and fourth arrows indicate the locations where **screws are necessary*
 
 > **Note:** The CAD model is intended as a reference for the physical construction. Some dimensions or structural details may need to be adjusted depending on the materials, servo positioning, and weight of the camera being used.
 
-(these info is valid for the image named as "pan and tilt labels.png") . ![Pan and Tilt Platform](./pan%20and%20tilt%20platform%20labels%20.png)
+(these info is valid for the image below) . ![Pan and Tilt Platform](./pan%20and%20tilt%20platform%20labels%20.png)
 
 
 
