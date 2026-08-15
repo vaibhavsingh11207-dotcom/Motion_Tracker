@@ -74,7 +74,7 @@ The third and fourth arrows indicate the locations where **screws are necessary*
 
 > **Note:** The CAD model is intended as a reference for the physical construction. Some dimensions or structural details may need to be adjusted depending on the materials, servo positioning, and weight of the camera being used.
 
-(these info is valid for the image below) . ![Pan and Tilt Platform](./pan%20and%20tilt%20platform%20labels%20.png)
+ ![Pan and Tilt Platform](./pan%20and%20tilt%20platform%20labels%20.png)
 
 
 
@@ -89,20 +89,23 @@ Depending on the person's position:
 * Moving up/down → the **tilt servo** adjusts.
 * When the person is approximately centered → the servos stop adjusting.
   
-   A[📷 USB Webcam] --> B[💻 Python + YOLOv8]
-   B --> C[👤 Detect Person]
-   C --> D[📍 Calculate Center X, Y]
-   D --> E[🔌 Serial Communication]
-   E --> F[⚙️ ESP32]
+```mermaid
+flowchart TD
+    A[📷 USB Webcam] --> B[💻 Python + YOLOv8]
+    B --> C[👤 Detect Person]
+    C --> D[📍 Calculate Center X, Y]
+    D --> E[🔌 Serial Communication]
+    E --> F[⚙️ ESP32]
 
-   F --> G[↔️ Pan Servo]
-   F --> H[↕️ Tilt Servo]
+    F --> G[↔️ Pan Servo]
+    F --> H[↕️ Tilt Servo]
 
-   G --> I[Pan Movement]
-   H --> J[Tilt Movement]
+    G --> I[Pan Movement]
+    H --> J[Tilt Movement]
 
-   I --> K[🎥 Pan-Tilt Camera]
-   J --> K
+    I --> K[🎥 Pan-Tilt Camera]
+    J --> K
+```
 
 
 
@@ -132,25 +135,24 @@ The mechanical platform was manually constructed and adapted during assembly to 
 * **ESP32Servo**
 * **PySerial**
 * **Tinkercad** — mechanical/CAD design
-* **Serial communication*
+* **Serial communication**
 
 
 ## 📁 Project Structure
 
 
-Motion_Tracker
+## 📁 Project Structure
 
-─ README.md
-─ motion tracker.py
-─ probablyfinalcode.ino
-─ tinker.obj
+```text
+Motion_Tracker/
+├── README.md
+├── motion tracker.py
+├── probablyfinalcode.ino
+├── tinker.obj
+├── pan and tilt platform labels .png
+└── backside of pan and tilt platform.png
+```
 
-─ pan and tilt platform labels .png
-─ backside of pan and tilt platform.png
-
-
-
-*Filenames may differ depending on the final repository organization.*
 
 
 ## ⚙️ Pin Configuration
@@ -177,7 +179,7 @@ pip install ultralytics opencv-python pyserial
 Open:
 
 
-esp32/servo_control.ino
+probablyfinalcode.ino
 
 
 Select the appropriate ESP32 board and upload the program using Arduino IDE.
@@ -191,7 +193,7 @@ Connect the USB webcam to the laptop.
 Run:
 
 
-python motion_tracking.py
+motion tracker.py
 
 
 The program detects the person and sends their position to the ESP32.
