@@ -1,5 +1,6 @@
-# Motion_Tracker
-real-time human tracking using esp32, yolov8s.pt and mg90s servo motors . An AI and robotics project. 
+AI-powered real-time human tracking camera using YOLOv8, ESP32, and a custom pan-tilt mechanism. 
+
+
 # 🤖 AI-Based Motion Tracking Pan-Tilt Camera Stand
 
 A DIY AI-powered pan-and-tilt camera stand built using an **ESP32, servo motors, computer vision, and a custom-designed mechanical platform**.
@@ -9,11 +10,7 @@ The system uses a camera connected to a laptop to detect and track a person in r
 This project was built from scratch as a hands-on exploration of **computer vision, robotics, embedded systems, and mechanical design**.
 
 
-## 🎥 Project Demo
 
-> Add the final demonstration video here.
-
-`[Demo Video](YOUR_VIDEO_LINK_HERE)`
 
 ## ✨ Features
 
@@ -26,6 +23,7 @@ This project was built from scratch as a hands-on exploration of **computer visi
 * Computer vision running on a laptop
 * Serial communication between Python and ESP32
 * Physical prototype built using inexpensive materials
+
 
 ## 🧠 How It Works
 
@@ -53,9 +51,8 @@ Serial Communication
 ESP32
 
 
-
-
 ## 🧩 CAD Design
+
 
 The pan-and-tilt mechanism was designed in Tinkercad before being constructed physically.
 
@@ -77,7 +74,8 @@ The third and fourth arrows indicate the locations where **screws are necessary*
 
 > **Note:** The CAD model is intended as a reference for the physical construction. Some dimensions or structural details may need to be adjusted depending on the materials, servo positioning, and weight of the camera being used.
 
-(these info is valid for the image named as "pan and tilt labels.png")
+(these info is valid for the image named as "pan and tilt labels.png") . ![Pan and Tilt Platform](./pan%20and%20tilt%20platform%20labels%20.png)
+
 
 
 
@@ -91,27 +89,31 @@ Depending on the person's position:
 * Moving up/down → the **tilt servo** adjusts.
 * When the person is approximately centered → the servos stop adjusting.
 
-
-             Camera
-                │
-                ▼
-        ┌───────────────┐
-        │   YOLO Model  │
-        └───────┬───────┘
-                │
-          Person Center
-             (X, Y)
-                │
-                ▼
-        ┌───────────────┐
-        │     ESP32     │
-        └───────┬───────┘
-                │
-        ┌───────┴───────┐
-        ▼               ▼
-   Pan Servo       Tilt Servo
-      ↔                ↕
-
+     USB Webcam
+              │
+              ▼
+       ┌──────────────┐
+       │ Python + YOLO│
+       └──────┬───────┘
+              │
+        Person Center
+           (X, Y)
+              │
+              ▼
+       Serial Communication
+              │
+              ▼
+          ┌───────┐
+          │ ESP32 │
+          └───┬───┘
+              │
+        ┌─────┴─────┐
+        ▼           ▼
+    Pan Servo    Tilt Servo
+        │           │
+        └─────┬─────┘
+              ▼
+       Pan-Tilt Camera
 
 
 
@@ -141,59 +143,21 @@ The mechanical platform was manually constructed and adapted during assembly to 
 * **ESP32Servo**
 * **PySerial**
 * **Tinkercad** — mechanical/CAD design
-* **Serial communication**
-
-
-## 🧩 Mechanical & CAD Design
-
-Before constructing the physical platform, I designed the pan-and-tilt mechanism digitally using **Tinkercad**.
-
-The CAD model was used to visualize the structure, plan the positioning of the servos, and understand how the pan and tilt joints would work before building the physical prototype.
-
-The final physical design was then constructed and modified where necessary based on real-world factors such as:
-
-* Servo torque
-* Camera weight
-* Mechanical stability
-* Available materials
-* Joint positioning
-* Structural strength
-
-The original CAD model is included in the repository under:
-
-
-cad/
-└── pan_tilt_platform.stl
-
-
-The physical prototype was built primarily using inexpensive materials, including ice cream sticks, making the project accessible without specialized manufacturing equipment.
+* **Serial communication*
 
 
 ## 📁 Project Structure
 
 
-
-AI-Motion-Tracking-Robot/
+Motion_Tracker
 
 ─ README.md
+─ motion tracker.py
+─ probablyfinalcode.ino
+─ tinker.obj
 
-─ python/
-   ─ motion_tracking.py
-
-─ esp32/
-   ─ servo_control.ino
-
-─ cad/
-   ─ pan_tilt_platform.stl
-
-─ images/
-   ─ cad_model.png
-   ─ final_model.jpg
-   ─ wiring.jpg
-   ─ prototype.jpg
-
-─ demo/
-   ─ project_video
+─ pan and tilt platform labels .png
+─ backside of pan and tilt platform.png
 
 
 
