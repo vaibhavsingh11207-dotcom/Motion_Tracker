@@ -146,26 +146,26 @@ The physical prototype was built primarily using inexpensive materials, includin
 
 
 AI-Motion-Tracking-Robot/
-│
-├── README.md
-│
-├── python/
-│   └── motion_tracking.py
-│
-├── esp32/
-│   └── servo_control.ino
-│
-├── cad/
-│   └── pan_tilt_platform.stl
-│
-├── images/
-│   ├── cad_model.png
-│   ├── final_model.jpg
-│   ├── wiring.jpg
-│   └── prototype.jpg
-│
-└── demo/
-    └── project_video
+
+─ README.md
+
+─ python/
+   ─ motion_tracking.py
+
+─ esp32/
+   ─ servo_control.ino
+
+─ cad/
+   ─ pan_tilt_platform.stl
+
+─ images/
+   ─ cad_model.png
+   ─ final_model.jpg
+   ─ wiring.jpg
+   ─ prototype.jpg
+
+─ demo/
+   ─ project_video
 
 
 
