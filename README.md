@@ -89,7 +89,7 @@ Depending on the person's position:
 * Moving up/down → the **tilt servo** adjusts.
 * When the person is approximately centered → the servos stop adjusting.
 
-     USB Webcam
+       USB Webcam
               │
               ▼
        ┌──────────────┐
