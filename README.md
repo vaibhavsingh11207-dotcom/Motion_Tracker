@@ -190,9 +190,6 @@ Connect the USB webcam to the laptop.
 
 Run:
 
-
-Run:
-
 ```bash
 python "motion tracker.py"
 ```
