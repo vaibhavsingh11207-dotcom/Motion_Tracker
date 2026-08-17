@@ -283,19 +283,19 @@ The software, electronics, and mechanical structure all have to work together.
 ### ⚙️ UPGRADES 
 
 Some upgrades done recently were :-
-Added a locking system in the model codes . when some people come in the frame of the webcam the models detects everyone and forms a box around everyone , but in the original model the system didn't know whom to track on encountering more then 1 person , hence to deal with that problem i have added a ON-CLICK LOCKING SYSTEM . 
+Added a locking system in the model codes . When some people come in the frame of the webcam the model detects everyone and forms a box around each , but in the original model the system didn't know whom to track on encountering more then 1 person , hence to deal with that problem i have added an ON-CLICK LOCKING SYSTEM . 
 
 HOW DOES IT WORK?
 
-suppose the model has formed multiple boxes marking multiple people in its frame , and we , for example want to track person A , now we can just simply CLICK on the box formed around person A and the model will automatically lock on that person and track them . since while forming boxes the model gives every box an ID , on losing the targeted person the model will wait for 5 seconds till the person A returns in the frame , if they do return to the frame the model starts tracking them again , in case they don't , in that case  the model will remove the lock from that person and return to its original state.
+Suppose the model has formed multiple boxes marking multiple people in its frame , and we , for example want to track person A , now we can just simply CLICK on the box formed around person A and the model will automatically lock on that person and track them . since while forming boxes the model gives every box an ID , on losing the targeted person the model will wait for 5 seconds till the person A returns in the frame , if they do return to the frame of the webcam in the given time , the model starts tracking them again , in case they don't , the model will remove the lock from that person and return to its original state.
 
 what's the original state?
 
-a huge difference between the previous model and this one is that this one doesn't automatically start tracking people on random till locked on someone . 
+A huge difference between the previous model and this one is that this one doesn't automatically start tracking people on random till locked on someone . 
 
-so yeah just because you've turned on the model it doesn't mean the model will start tracking you MUST select a person to track by clicking on their particular box .
+so yeah, just because you've turned on the model it doesn't mean the model will start tracking, you MUST select a person to track by clicking on their particular box .
 
-I've name this as "motion tracker 2.0".
+I've named this as "motion tracker 2.0".
 
 
 ## 🔮 Future Improvements
