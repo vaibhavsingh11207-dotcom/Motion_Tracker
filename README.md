@@ -57,6 +57,8 @@ ESP32
 The pan-and-tilt mechanism was designed in Tinkercad before being constructed physically.
 
 
+![Motion Tracker Setup](https://raw.githubusercontent.com/vaibhavsingh11207-dotcom/Motion_Tracker/main/model_picture_1.png)
+
 ### 🔧 Assembly Instructions
 
 The arrows in the CAD model indicate the following:
