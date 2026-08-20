@@ -79,7 +79,7 @@ The third and fourth arrows indicate the locations where **screws are necessary*
  ![Pan and Tilt Platform](./pan%20and%20tilt%20platform%20labels%20.png)
 
 
-
+![Motion Tracker Front View](model_picture_2.png)
 
 ### 2. Pan-Tilt Control
 
